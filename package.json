@@ -1,0 +1,39 @@
+{
+  "name": "hatch-ext",
+  "displayName": "Hatch Showroom Guidelines",
+  "description": "Search Hatch Showroom Guidelines",
+  "version": "1.0.1",
+  "publisher": "Hatch",
+  "engines": {
+    "vscode": "^1.75.1"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "hatch-ext.searchGuidelines",
+        "title": "Search Showroom Guidelines"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.75.1",
+    "@types/glob": "^8.0.1",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.14.0",
+    "eslint": "^8.34.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^4.9.5",
+    "vscode-test": "^1.4.1"
+  },
+  "dependencies": {}
+}
